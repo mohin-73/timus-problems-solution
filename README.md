@@ -1,2 +1,1 @@
-# timus-problems-solution
-Timus problems soution
+MOHIN_73
