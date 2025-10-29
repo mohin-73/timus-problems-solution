@@ -10,8 +10,8 @@ int main() {
     while (cin >> num) {
         root.push(sqrt(num));
     }
+    cout << fixed << setprecision(4);
     while (!root.empty()) {
-        cout << fixed << setprecision(4);
         cout << root.top() << '\n';
         root.pop();
     }
