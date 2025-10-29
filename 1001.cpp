@@ -1,23 +1,19 @@
-#include <iostream>
-#include <stack>
-#include <cmath>
-#include <iomanip>
+#include <bits/stdc++.h>
+
+using namespace std;
 
 int main() {
-    std::ios::sync_with_stdio(false);
-    std::cin.tie(nullptr);
-
-    long long num{};
-    std::stack<double> sqr;
-
-    while (std::cin >> num) {
-        sqr.push(std::sqrt(num));
+    ios::sync_with_stdio(false);
+    cin.tie(nullptr);
+    long long num;
+    stack<long double> root;
+    while (cin >> num) {
+        root.push(sqrt(num));
     }
-
-    while (!sqr.empty()) {
-        std::cout << std::fixed << std::setprecision(4) << sqr.top() << '\n';
-        sqr.pop();
+    while (!root.empty()) {
+        cout << fixed << setprecision(4);
+        cout << root.top() << '\n';
+        root.pop();
     }
-
     return 0;
 }
