@@ -1,16 +1,14 @@
-#include <iostream>
+#include <bits/stdc++.h>
+
+using namespace std;
 
 int main() {
-    std::ios::sync_with_stdio(false);
-    std::cin.tie(nullptr);
-
-    int a{}, b{}, c{};
-    std::cin >> a >> b >> c;
-    
+    ios::sync_with_stdio(false);
+    cin.tie(nullptr);
+    int a, b, c;
+    cin >> a >> b >> c;
     int mn = a - b - c;
-    mn = std::min(mn, a - b * c);
-
-    std::cout << mn << '\n';
- 
+    mn = min(mn, a - b * c);
+    cout << mn << '\n';
     return 0;
 }
