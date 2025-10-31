@@ -1,13 +1,13 @@
-#include <iostream>
+#include <bits/stdc++.h>
+
+using namespace std;
 
 int main() {
-    std::ios::sync_with_stdio(false);
-    std::cin.tie(nullptr);
-
-    int n{}, a{}, b{};
-    std::cin >> n >> a >> b;
-
-    std::cout << 2 * n * a * b << '\n';
-
+    ios::sync_with_stdio(false);
+    cin.tie(nullptr);
+    int n, a, b;
+    cin >> n >> a >> b;
+    int weight = n * a * b;
+    cout << 2 * weight << '\n';
     return 0;
 }
