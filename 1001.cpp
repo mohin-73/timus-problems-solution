@@ -6,7 +6,7 @@ int main() {
     ios::sync_with_stdio(false);
     cin.tie(nullptr);
     long long num;
-    stack<long double> root;
+    stack<double> root;
     while (cin >> num) {
         root.push(sqrt(num));
     }
