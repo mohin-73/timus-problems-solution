@@ -1,13 +1,12 @@
-#include <iostream>
+#include <bits/stdc++.h>
+
+using namespace std;
 
 int main() {
-    std::ios::sync_with_stdio(false);
-    std::cin.tie(nullptr);
-
-    int n{}, m{};
-    std::cin >> n >> m;
-
-    std::cout << m - 1 << " " << n - 1 << '\n';
-
+    ios::sync_with_stdio(false);
+    cin.tie(nullptr);
+    int a, b;
+    cin >> a >> b;
+    cout << b - 1 << ' ' << a - 1 << '\n';
     return 0;
 }
