@@ -9,7 +9,7 @@ int main() {
     for (int i = 0; i < 2; ++i) {
         int n, x;
         cin >> n;
-        while (n--) cin >> x, mp[x] += 1;
+        while (n--) cin >> x, ++mp[x];
     }
     int n, x, ans = 0;
     cin >> n;
