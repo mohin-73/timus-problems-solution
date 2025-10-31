@@ -1,20 +1,17 @@
-#include <iostream>
+#include <bits/stdc++.h>
+
+using namespace std;
 
 int main() {
-    std::ios::sync_with_stdio(false);
-    std::cin.tie(nullptr);
-
-    int k{}, n{}, s{}, x{};
-    std::cin >> k >> n;
-
+    ios::sync_with_stdio(false);
+    cin.tie(nullptr);
+    int k, n, x;
+    cin >> k >> n;
+    int s = 0;
     for (int i = 0; i < n; ++i) {
-        std::cin >> x;
-        s += x;
-        s -= k;
-        s = std::max(0, s);
+        cin >> x;
+        s = max(s + x - k, 0);
     }
-
-    std::cout << s << '\n';
-    
+    cout << s << '\n';
     return 0;
 }
