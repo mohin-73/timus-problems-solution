@@ -1,17 +1,16 @@
-#include <iostream>
+#include <bits/stdc++.h>
+
+using namespace std;
 
 int main() {
-    std::ios::sync_with_stdio(false);
-    std::cin.tie(nullptr);
-
-    int f{};
-    std::cin >> f;
-
-    if ((12 - f) * 45 <= 240) {
-        std::cout << "YES\n";
+    ios::sync_with_stdio(false);
+    cin.tie(nullptr);
+    int f;
+    cin >> f;
+    if ((12 - f) * 45 > 240) {
+        cout << "NO\n";
     } else {
-        std::cout << "NO\n";
+        cout << "YES\n";
     }
- 
     return 0;
 }
